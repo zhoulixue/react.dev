@@ -7,4 +7,11 @@ export const menuItems = [
       { key: 'why-react', label: '为什么要使用react' },
     ]
   },
+  {
+    key: 'describing-the-ui',
+    label: 'React如何实现UI',
+    children: [
+      { key: 'your-first-component', label: '第一个组件' },
+    ]
+  },
 ]
