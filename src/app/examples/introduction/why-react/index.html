@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  count的值为：<span>0</span>
+  <button onclick="onClick()">点击后count+1</button>
+  <script>
+    let count = 0;
+    function onClick() {
+      count += 1;
+      const span = document.getElementsByTagName('span')[0]
+      console.log(span)
+      span.textContent = count
+    }
+  </script>
+</body>
+
+</html>

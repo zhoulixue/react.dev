@@ -1,92 +1,21 @@
-logo
-Ant Design Mobile
-v5.30.0
-指南组件资源国内镜像返回旧版发布日志GitHubEnglish
+# React是什么？
+React 是一个用于构建用户界面的 JavaScript 库。它由 Facebook 开发，已经成为了构建现代 Web 应用程序的主要工具之一。React 的主要特点是组件化和声明式编程，它可以让你更轻松地构建复杂的用户界面，并提高代码的可重用性和可维护性。
 
-快速上手
-迁移指南
-常见问题
-CSS 变量
-主题
-深色模式（试验性）
-按需加载
-国际化
-关于试验性
-高清适配
-预构建产物
-服务端渲染 / SSR（试验性）
-减弱动效（试验性）
-服务端渲染 / SSR 
-对 SSR（服务端渲染）的支持目前还处在比较初始的阶段，如果你在使用过程中发现了 bug，欢迎向我们提交 issue。
+# 本文适用的人群
+本文是对react官方文档的解析。你可以直接查看[React官方文档](https://react.dev/learn)进行系统的学习。    
+但是如果你在学习官方文档的过程中遇到以下问题：
+1. 英文有困难，官方文档无看不懂
+2. API晦涩难懂，没有对应的示例代码
+3. 看文档代码懂了，但是自己实践时很困难  
 
-Next.js
-在 Next.js 中使用 antd-mobile 需要做一些额外的配置。
+你可以使用本文，对文档中的内容去芜存菁，并对文章中较晦涩的内容进行深入的理解和查缺补漏。以便你对react的功能有更加深入的理解。
 
-Next.js 12
-首先，需要安装 next-transpile-modules 依赖：
+# 本文的学习方法
+问题解决方法是一种非常重要的思维和工作方法，通常包括以下几个步骤：
+1. 提出问题：明确问题的性质、范围和影响，确定需要解决的问题。
+2. 发现问题：收集和整理与问题相关的信息和数据，分析问题的根本原因和影响因素。
+3. 解决问题：制定解决问题的方案和计划，实施解决方案，监控和评估解决效果。
 
-$ npm install --save-dev next-transpile-modules
-# or
-$ yarn add -D next-transpile-modules
-# or
-$ pnpm add -D next-transpile-modules
-然后在 next.config.js 中进行配置：
+笔者坚信，计算机科学中已提出的任何原理都可以用这个方法去学习。
 
-
-const withTM = require('next-transpile-modules')([
-  'antd-mobile',
-]);
-
-module.exports = withTM({
-  // 你项目中其他的 Next.js 配置
-});
-Next.js 13
-Next.js 13 可以通过配置自动处理 node_modules 中的依赖，不再需要 next-transpile-modules。
-
-// next.config.js
-const nextConfig = {
-  transpilePackages: ['antd-mobile'],
-};
-
-module.exports = nextConfig;
-如果在 app 目录下使用 antd-mobile，需要在文件顶部添加 'use client' 指令。
-
-// app/page.jsx
-'use client'
-
-import { Button } from 'antd-mobile'
-transpilepackages
-server-and-client-components
-Remix
-在 Remix 中使用 antd-mobile 需要做一些额外的配置。
-
-在 tsconfig.json 的 compilerOptions.paths 中新增 antd-mobile 配置，include 中添加 global.d.ts:
-
-{
-  "include": ["remix.env.d.ts", "global.d.ts", "**/*.ts", "**/*.tsx"],
-  "compilerOptions": {
-    ...
-    "paths": {
-      "antd-mobile": ["node_modules/antd-mobile/bundle/antd-mobile.es.js"]
-    }
-  }
-}
-在根目录新增 global.d.ts 文件:
-
-declare module 'antd-mobile' {
-  export * from 'antd-mobile/es';
-}
-最后在 app/root.tsx 中引入样式文件:
-
-import styles from "antd-mobile/bundle/style.css";
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}
-remix template
-在 GitHub 上编辑此页
-2023/4/23 19:08:06
-Next.js
-Next.js 12
-Next.js 13
-Remix
+因此本文全文按照此方法来讲解React的所有概念。
