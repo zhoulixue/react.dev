@@ -1,7 +1,11 @@
-export default function DemoLayout({
-  children,
-}: {
+export default function DemoLayout(props: {
   children: React.ReactNode;
+  analytics: React.ReactNode;
+  team: React.ReactNode;
 }) {
-  return <section className="layout-demo">{children}</section>;
+  return <section className="layout-demo">
+    {props.children}
+    {props.analytics}
+    {props.team}
+  </section>;
 }
