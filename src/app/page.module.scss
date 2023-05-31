@@ -1,0 +1,15 @@
+@import '@/assets/scss/variables.scss';
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  @include center();
+  .nav {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
