@@ -12,6 +12,7 @@ export const menuItems = [
     label: 'React如何实现UI',
     children: [
       { key: 'your-first-component', label: '第一个组件' },
+      { key: 'importing-and-exporting-components', label: '导入和导出组件' } ,
     ]
   },
 ]
