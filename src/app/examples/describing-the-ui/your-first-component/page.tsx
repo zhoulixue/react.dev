@@ -1,5 +1,9 @@
-import Proflie from './profile'
+import Gallery from './gallery'
 
 export default function Page() {
-  return <Proflie></Proflie>
+  return (
+    <div>
+      <Gallery />
+    </div>
+  )
 }
