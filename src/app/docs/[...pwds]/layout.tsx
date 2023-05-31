@@ -2,6 +2,11 @@ import Nav from '../../../components/nav/nav'
 import style from './docs.module.scss'
 import { menuItems } from './config'
 
+export const metadata = {
+  title: 'react.dev中文翻译',
+  description: 'react.dev文档的中文翻译',
+}
+
 export default function DocsLayout({
   children,
   params,

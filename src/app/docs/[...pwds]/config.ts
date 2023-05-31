@@ -14,6 +14,7 @@ export const menuItems = [
       { key: 'your-first-component', label: '第一个组件' },
       { key: 'importing-and-exporting-components', label: '导入和导出组件' } ,
       { key: 'writing-markup-with-jsx', label: '使用JSX编写标签' },
+      { key: 'passing-props-to-a-component', label: '向组件传递Props' },
     ]
   },
 ]
