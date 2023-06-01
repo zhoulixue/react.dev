@@ -162,9 +162,6 @@ function Profile() {
 1. 函数名首字母必须大写
 2. 返回JSX标签
 
-## 示例代码
-[第一个组件](/examples/describing-the-ui/your-first-component)
-
 ## 课后练习
 ### 1. 导出组件
 下面代码中的根组件没有导出，导致应用无法工作，请修复它。

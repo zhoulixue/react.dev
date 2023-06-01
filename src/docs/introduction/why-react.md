@@ -79,7 +79,3 @@ export default function Page() {
 
 实际上，React就是一个不用你操心的司机。你的任何数据他都会准确，快速的更新到DOM中去。你不用去关心React内部是怎么更新DOM的，只需要告诉他最新的数据就好。
 
-
-## 代码演示地址
-* [react 计数器](/examples/introduction/why-react)
-
