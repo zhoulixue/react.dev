@@ -1,7 +1,7 @@
 # 第一个组件
 组件是react的核心概念，是构建用户UI的基础。
 
-本章主要内容包括：
+在本章中，你将会学到：
 * 什么是组件
 * 组件在react 应用中的作用是什么
 * 如何写一个react组件
@@ -145,7 +145,7 @@ function Profile() {
 ```
 当一个子组件需要从父组件获取数据时，[使用props传递数据](https://react.dev/learn/passing-props-to-a-component)，而不是在组件内部定义组件。
 
-## 深入学习-组件是一只向下的
+## 深入学习-组件是从上往下的
 你的React组件开始于一个“root”组件。通常情况下它在你启动一个新项目的时候会自动创建。例如，如果你使用[CodeSandbox](https://codesandbox.io/)或者[Create React App](https://create-react-app.dev/),根组件定义在`src/App.js`。如果你使用 [Next.js](https://nextjs.org/)框架，根组件定义在`pages/index.js`。在这些例子中，你已经导出了根组件。
 
 大多数的React应用都是向下嵌套使用组件的。这意味着你不仅是使用像button一样的可服用的简单代码片段，也有可能使用大的代码片段例如 siderbars,lists，甚至于是一整个页面。即使一些组件只使用一次，它夜是组织UI和标签的最得心应手的方法。
@@ -181,7 +181,7 @@ function Profile() {
 ```
 ### 2.修复返回语句
 下面代码中的返回语句不正确，修复它。
-[sanbox forlk](https://codesandbox.io/s/fggp8l?file=%2FApp.js&utm_medium=sandpack)
+[sanbox fork](https://codesandbox.io/s/fggp8l?file=%2FApp.js&utm_medium=sandpack)
 ```js
 export default function Profile() {
   return
